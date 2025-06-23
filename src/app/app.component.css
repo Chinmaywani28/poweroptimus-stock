@@ -1,0 +1,49 @@
+/* .chart-container {
+  width: 100%;
+  height: 400px;
+} */
+
+/* Base Navbar Styling */
+.navbar {
+  display: flex;              /* Flex layout: row by default */
+  justify-content: space-between; /* Space between logo and icons */
+  align-items: center;        /* Center vertically */
+  padding: 17px 83px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.3vw;
+  color: #777;
+}
+
+/* Icons container */
+.nav-icons {
+  display: flex;
+  gap: 20px;                  /* Space between icons */
+}
+
+/* Each icon */
+.icon {
+  /* box-shadow: 1px 1px; */
+  font-size: 1.3vw;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);      /* Small zoom on hover */
+}
+
+/* 📱 Responsive (Mobile) - max width 600px */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;   /* Stack logo and icons vertically */
+    align-items: flex-start;  /* Align items to the left */
+  }
+
+  .nav-icons {
+    margin-top: 8px;          /* Add space between logo and icons */
+  }
+}

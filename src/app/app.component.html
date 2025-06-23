@@ -1,0 +1,32 @@
+<!-- <button (click)="onClick()">click</button> -->
+<!-- <div #chartContainer class="chart-container"></div> -->
+
+<nav class="navbar">
+    <div class="logo">
+      <div style="font-weight: bold;">Smart Energy Monitoring & Management</div>
+      <div>Your Customized Dashboard for Medicine Manufacturing Unit</div>  
+    </div>
+    <div class="nav-icons">
+      <span class="icon">
+        <i class="ri-add-line"></i>
+      </span>
+      <span class="icon">
+        <i class="ri-bar-chart-horizontal-fill"></i>
+      </span>
+      <span class="icon">
+        <i class="ri-notification-line"></i>
+      </span>
+      <span class="icon">
+        <i class="ri-settings-2-fill"></i>
+      </span>
+    </div>
+  </nav>
+
+
+<app-temperature-chart-widget
+  [title]="''"
+  [data]="temperatureData"
+  [latest]="latestTemperature"
+></app-temperature-chart-widget>
+
+
